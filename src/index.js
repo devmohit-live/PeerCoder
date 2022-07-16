@@ -1,17 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./components/App";
+import {
+  HashRouter as Router,
+  Route,
+  useParams,
+  Redirect,
+} from "react-router-dom";
+const { v4: uuidV4 } = require("uuid");
+ReactDOM.render(
+  <Router>
+    <Route exact path="/">
+      <Redirect to={"/" + uuidV4()} />
+    </Route>
+    <Route path="/:roomId" children={<Room />} />
+  </Router>,
+  document.getElementById("root")
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+function Room() {
+  let { roomId } = useParams();
+  return <App roomId={roomId} />;
+}
