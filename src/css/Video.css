@@ -1,0 +1,7 @@
+video {
+  margin: 5px 0px 0px 5px;
+  object-fit: cover;
+  border: 2px solid rgb(251, 216, 127);
+  border-radius: 7px;
+  
+}
