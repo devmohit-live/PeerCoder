@@ -26,6 +26,13 @@ class App extends Component {
       output: "",
       status: "RUN",
     };
+
+    //why binding , instead of fatarrow fx call in eventhadler creator itself ex:
+    // onCLick ={()=>{clickHandler()}} //bcz here to binding happend and every time we click binding is done,
+    // so it is better to use binding in the constructor itsef
+    // Why binding needed: bcz this is not defined for the functions(code inside teh function), and dofig this.setState will given error as this is not defiend
+    // See Copy for this scope in class, function based in strict and normal mode
+
     this.handleVideoToggle = this.handleVideoToggle.bind(this);
     this.handleAudioToggle = this.handleAudioToggle.bind(this);
     this.handleChangeCode = this.handleChangeCode.bind(this);
