@@ -19,7 +19,7 @@ class Footer extends Component {
           rel="noopener noreferrer"
           className="right-footer"
         >
-          © Coonect With me on Linkedin
+          © Connect With me on Linkedin
         </a>
       </div>
     );
