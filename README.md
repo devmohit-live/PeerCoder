@@ -10,6 +10,7 @@
 - **Real time code syncing among peers 👨‍💻**
 - **Executes code in Java, Python, C++, C 💻**
 - **Real time video and audio call 📹**
+- **Peers can have different themes for same environment 📹**
 - **Clean UI ⚡**
 
 ## What is Peer Coder? 🤔
