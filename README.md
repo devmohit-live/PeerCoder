@@ -23,7 +23,7 @@
 
 ## How it works? 🤔
 
-- **open the website [hosted site to be added](https://peercoder.netlify.app/)**
+- **open the website [https://peercoder.netlify.app/](https://peercoder.netlify.app/)**
 - **Click Room url button and copy the url given in the prompt**
 - **Share that url with your peers and enjoy coding**
 
