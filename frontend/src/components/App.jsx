@@ -10,7 +10,7 @@ import "../css/App.css";
 const myPeer = new Peer();
 // https://peaceful-depths-33963.herokuapp.com/
 // http://localhost:4000
-const socket = io("http://localhost:4000");
+const socket = io("https://devmohit-peer-coder.herokuapp.com");
 const peers = {};
 
 class App extends Component {
