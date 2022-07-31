@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "start": "cd ./backend/ && npm install && node server.js",
+    "heroku-postbuild": "cd ./frontend/ && npm install && npm run build",
+    "backend": "cd ./backend/ && node server.js ",
+    "frontend": "cd ./frontend/ && npm run start",
+    "test": "cd ./frontend/ && npm run test"
+  }
+}
