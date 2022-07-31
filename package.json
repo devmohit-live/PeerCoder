@@ -1,0 +1,23 @@
+{
+  "name": "peer-coder",
+  "version": "1.0.0",
+  "description": "[![React Badge](http://img.shields.io/badge/Powered%20By-React-blue?style=for-the-badge&logo=react)](https://reactjs.org/) [![Website Badge](https://img.shields.io/badge/Visit-Now-green?style=for-the-badge&logo=vercel)](link-to-hosted-site/)",
+  "main": "frontend/src/index.js",
+  "scripts": {
+    "start": "cd ./backend/ && npm install && node server.js",
+    "heroku-postbuild": "cd ./frontend/ && npm install && npm run build",
+    "backend": "cd ./backend/ && node server.js ",
+    "frontend": "cd ./frontend/ && npm run start",
+    "test": "cd ./frontend/ && npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devmohit-live/PeerCoder.git"
+  },
+  "author": "devmohit-live",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/devmohit-live/PeerCoder/issues"
+  },
+  "homepage": "https://github.com/devmohit-live/PeerCoder#readme"
+}
